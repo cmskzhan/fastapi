@@ -38,3 +38,6 @@ data = {
 }
 response = requests.post('http://localhost:8000/accounts/login/', headers=headers, data=data) 
 ```
+  
+## Doc
+  http://localhost:8000/docs
