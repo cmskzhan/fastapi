@@ -20,4 +20,11 @@ data = {'name': 'item1', 'info':'item1_info', 'price': 40.5, 'qty':2}
 
 x = requests.post(url, json = data, headers = headers)
 ```
-  
+
+Username/Password Form Post: 
+<br>
+curl -X 'POST' \
+  'http://localhost:8000/accounts/login/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'username=aa&password=bb'
