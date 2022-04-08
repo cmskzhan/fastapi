@@ -28,3 +28,13 @@ curl -X 'POST' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'username=aa&password=bb'
+ 
+```python
+import requests
+headers = {"accept": "application/json", "Content-Type": "application/x-www-form-urlencoded"}
+data = {
+    'username': 'aa',
+    'password': 'bb',
+}
+response = requests.post('http://localhost:8000/accounts/login/', headers=headers, data=data) 
+```
